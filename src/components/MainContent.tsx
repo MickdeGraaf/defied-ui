@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/layout";
 import { Route, Routes } from "react-router";
 import LendingSwap from "../pages/LendingSwap";
+import UnitConverter from "../pages/UnitConverter";
 
 const MainContent = () => {
     return(
@@ -8,6 +9,7 @@ const MainContent = () => {
             <Routes>
                 <Route path="/home">Home</Route>
                 <Route path="lending-swap"  element={<LendingSwap />}/>
+                <Route path="unit-converter" element={<UnitConverter />} />
             </Routes>
         </Box>
     );
