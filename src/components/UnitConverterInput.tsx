@@ -30,10 +30,13 @@ const UnitConverterInput = (props: UnitConverterProps) => {
         console.log(typeof e.currentTarget.value);
     }
 
+    const formattedValue = props.value ? ethers.utils.formatUnits(props.value, props.format).replace(/\.0+$/,'') : "";
+    console.log(formattedValue);
+
     return(
         <FormControl>
             <FormLabel htmlFor={props.format}>{props.title}</FormLabel>
-            <Input onChange={handleChange} id={props.format} type='number' placeholder={props.title} value={props.value && ethers.utils.formatUnits(props.value, props.format)} />
+            <Input onChange={handleChange} id={props.format} type='number' placeholder={props.title} value={ formattedValue } />
         </FormControl>
     )
 }
