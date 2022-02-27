@@ -36,7 +36,7 @@ const UnitConverterInput = (props: UnitConverterProps) => {
     return(
         <FormControl>
             <FormLabel htmlFor={props.format}>{props.title}</FormLabel>
-            <Input onChange={handleChange} id={props.format} type='number' placeholder={props.title} value={ formattedValue } />
+            <Input lang="en-US" onChange={handleChange} id={props.format} type='number' placeholder={props.title} value={ formattedValue } />
         </FormControl>
     )
 }

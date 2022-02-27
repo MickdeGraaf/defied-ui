@@ -1,6 +1,8 @@
 import { Text, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button, Input, Table, TableCaption, Thead, Tr, Th, Tbody, Td, Tfoot, Box, Flex } from "@chakra-ui/react";
+import { Token } from "@usedapp/core";
 import { useState } from "react";
 import lendingMigratorAssets from "../config/lendingMigratorAssets";
+import TokenBalance from "./TokenBalance";
 import TokenIcon from "./TokenIcon";
 
 interface SetToken {
@@ -50,7 +52,7 @@ const TokenSelectModal: React.FunctionComponent<TokenSelectModalProps> = ({open,
                             <Box flex="1">
                                 <Text weight="bold" px="2">{token.symbol}</Text>
                             </Box>
-                            <Text> 0.1 </Text>
+                            <TokenBalance address={token.address} decimals={token.decimals}></TokenBalance>
                         </Flex>
                     );
                 })}

@@ -19,6 +19,12 @@ const lendingMigratorAssets = {
                 "decimals": 18,
                 "name": "eUSDC",
                 "symbol": "eUSDC",
+            },
+            "0x39aa39c021dfbae8fac545936693ac917d5e7563": {
+                "protocol": "Compound",
+                "decimals": 18,
+                "name": "cUSDC",
+                "symbol": "cUSDC"
             }
         }
     }
