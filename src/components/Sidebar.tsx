@@ -11,6 +11,7 @@ const Sidebar: React.FunctionComponent = (props) => {
                <NavItem to="./lending-swap">Lending Swap</NavItem>
                {/* <NavItem to="./e-token-migrate">Migrate Money Market</NavItem> */}
                <NavItem to="./unit-converter">Ethereum Unit Converter</NavItem>
+               <NavItem to="./nft-batch-transfer">NFT Batch Transfer</NavItem>
                {/* <NavItem to="./e-token-migrate">Gas Price Checker</NavItem>  */}
             </Menu>
         </Box>
